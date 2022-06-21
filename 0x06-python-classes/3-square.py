@@ -17,7 +17,6 @@ class Square():
         Args:
         size (int): size of the square.
         """
-
         if (isinstance(size, int)):
             self.__size = size
             if size < 0:
