@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """ Module 3-square: class Square """
 
 
@@ -11,7 +12,7 @@ class Square():
     __init__ : init of a size attribute for each instance.
     """
 
-    def __init__(self, size=0):
+    def __init__(self, size= 0):
 
         """ Initialization of attributes for instances
         Args:
