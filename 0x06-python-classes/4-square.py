@@ -2,7 +2,7 @@
 """Module 4-square: class Square """
 
 
-class Square():
+class Square:
     """
     Square: defines a square.
     Attributes:
@@ -12,41 +12,25 @@ class Square():
     """
 
     def __init__(self, size=0):
+        """Initialize a new square.
 
-        """ Initialization of attributes for instances
         Args:
-        size (int): size of the square.
+        size (int): The size of the new square.
         """
-        if not (isinstance(size, int)):
-            raise TypeError("size must be an integer")
-        if size < 0:
-            raise ValueError("size must be >= 0")
-        self.__size = size
+        self.size = size
 
     @property
     def size(self):
-            """ getter function for private attribute size.
-            Returns:
-            size.
-            """
-        return self.__size
-
+        """Get/set the current size of square."""
+        return (self.__size)
     @size.setter
     def size(self, value):
-            """ setter function for private attribute size.
-            Args:
-            value: value to be set.
-            Returns:
-            nothing.
-            """
-        if not (isinstance(value, int)):
+        if not isinstance(value, int):
             raise TypeError("size must be an integer")
-        if value < 0:
+        elif value < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
 
-    def area(self):
-                """
-                area of the square.
-                """
-        return self.__size * self.__size
+        def area(self):
+            """Return the current area of the square."""
+            return (self.__size * self.__size)
