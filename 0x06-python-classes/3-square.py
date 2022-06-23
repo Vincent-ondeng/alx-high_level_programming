@@ -11,7 +11,7 @@ class Square():
     __init__ : init of a size attribute for each instance.
     """
 
-    def __init__(self, size= 0):
+    def __init__(self, size=0):
 
         """ Initialization of attributes for instances
         Args:
@@ -25,4 +25,4 @@ class Square():
             raise TypeError("size must be an integer")
 
     def area(self):
-        return self.__size *self.__size
+        return self.__size * self.__size
