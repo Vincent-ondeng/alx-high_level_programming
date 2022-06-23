@@ -35,7 +35,7 @@ class Node:
     @next_node.setter
     def next_node(self, value):
         if not isinstance(value, Node) and value is not None:
-            raise TypeError("next_node must be a node object")
+            raise TypeError("next_node must be a Node object")
         self.__next_node = value
 
 
@@ -77,4 +77,4 @@ class SinglyLinkedList:
         while tmp is not None:
             values.append(str(tmp.data))
             tmp = tmp.next_node
-        return ('\n'.join(values))    
+        return ('\n'.join(values))
