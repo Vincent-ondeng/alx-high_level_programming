@@ -1,10 +1,4 @@
-.footer{
-    background-color: #24262b;
-    padding: 60px 20px;
-    position: absolute;
-    left: 0;
-    right: 0;
-[A[C[C[C[C[C[C[C[C[C[C[C[[A[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[[A[C[C[C[C[C#include <stdio.h>
+#include <stdio.h>
 #include <Python.h>
 
 /**
@@ -74,5 +68,3 @@ void print_python_list(PyObject *p)
 			print_python_bytes(obj);
 	}
 }
-
-
