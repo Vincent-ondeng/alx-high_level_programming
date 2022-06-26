@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-#Author - Vincent Ondeng
+# Author - Vincent Ondeng
 
 def magic_calculation(a, b, c):
     """Match bytecode provided by Holberton School."""
